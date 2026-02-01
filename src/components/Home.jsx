@@ -42,7 +42,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full sm:my-10 h-full flex justify-center sm:justify-end items-start pointer-events-none">
                     <img 
                         className="w-80 h-80 sm:w-96 sm:h-96 object-cover rounded-full border-5 border-[#8f0177d0] shadow-2xl shadow-[#6EACDA]/20 pointer-events-auto transition-transform duration-500 hover:scale-105" 
-                        src="./src/assets/mine1.jpg" 
+                        src="./mine1.jpg" 
                         alt="Sahil Gupta" 
                     />
                 </div>
