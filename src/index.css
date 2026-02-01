@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+@keyframes typing {
+  0% { width: 0; }
+  /* Animation reaches full width at 70% of the time */
+  70% { width: 60%; } 
+  /* Holds the full width from 70% to 90% so people can read it */
+  90% { width: 60%; }
+  /* Quickly resets to 0 at the very end to loop */
+  100% { width: 0; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #818cf8; }
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #818cf8;
+  white-space: nowrap;
+  margin: 0; 
+  letter-spacing: 0.05em; 
+  width: 0;
+  /* Changed 'forwards' to 'infinite' to make it loop */
+  animation: 
+    typing 5s steps(30, end) infinite,
+    blink .5s step-end infinite;
+}
